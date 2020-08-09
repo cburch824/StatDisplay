@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/X4Foundations/X4Foundations.Test/bin/Debug/netcoreapp3.1
+/X4Foundations/X4Foundations/bin/Debug/netcoreapp3.1
+/X4Foundations/X4Foundations.Test/obj
+/X4Foundations/X4Foundations/obj

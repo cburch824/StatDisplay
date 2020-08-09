@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.69) at 18.03.2020_13-06-26-->
+<macros>
+  <macro name="engine_arg_l_allround_01_mk1_macro" class="engine">
+    <component ref="engine_arg_l_allround_01_mk1" />
+    <properties>
+      <identification name="{20107,3004}" basename="{20107,3001}" shortname="{20107,3005}" makerrace="argon" description="{20107,3002}" mk="1" />
+      <boost duration="29" thrust="2" attack="10" release="1" />
+      <travel charge="20" thrust="31" attack="75" release="22.5" />
+      <thrust forward="4206" reverse="4627" />
+      <angular />
+      <hull max="4033" threshold="0.3" />
+      <effects>
+        <boosting ref="arg_boost_fx_l" />
+      </effects>
+      <sounds>
+        <enginedetail ref="enginedetail_ship_l_01" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>

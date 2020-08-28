@@ -1,14 +1,15 @@
 ﻿using System.ComponentModel;
 
-namespace X4Foundations.Model.Engine
+namespace X4Foundations.Model.Bullet
 {
-	public class EngineModel : INotifyPropertyChanged
+	public class BulletModel : INotifyPropertyChanged
 	{
 		private string _name;
-		private EngineSize? _size;
+		private BulletSize? _size;
 		private FactionType? _faction;
-		private EngineType? _type;
-		private EngineGrade? _grade;
+		private BulletType? _type;
+		private BulletGrade? _grade;
+		private BulletWeaponType? _weaponType;
 		private int? _version;
 		private Properties _properties;
 
@@ -23,7 +24,7 @@ namespace X4Foundations.Model.Engine
 			}
 		}
 
-		public EngineSize? Size
+		public BulletSize? Size
 		{
 			get => _size;
 			set
@@ -41,7 +42,7 @@ namespace X4Foundations.Model.Engine
 				OnPropertyChanged("Faction");
 			}
 		}
-		public EngineType? Type
+		public BulletType? Type
 		{
 			get => _type;
 			set
@@ -50,13 +51,22 @@ namespace X4Foundations.Model.Engine
 				OnPropertyChanged("Type");
 			}
 		}
-		public EngineGrade? Grade
+		public BulletGrade? Grade
 		{
 			get => _grade;
 			set
 			{
 				_grade = value;
 				OnPropertyChanged("Size");
+			}
+		}
+		public BulletWeaponType? WeaponType
+		{
+			get => _weaponType;
+			set
+			{
+				_weaponType = value;
+				OnPropertyChanged("WeaponType");
 			}
 		}
 		public int? Version

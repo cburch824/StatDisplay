@@ -12,11 +12,10 @@ namespace X4Foundations.DataAccess
 	public class EngineGetter
 	{
 		private string _engineFolder;
-		private int _numberOfEngineFiles;
 		private List<string> EngineFilePaths => Directory.EnumerateFiles(_engineFolder).ToList();
 
 		public List<EngineModel> Engines { get; set; }
-		public int NumberOfEngineFiles => EngineFilePaths.Count();
+		public int NumberOfEngineFiles => EngineFilePaths.Count;
 
 		public EngineGetter(string engineFolder)
 		{

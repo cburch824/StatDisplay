@@ -15,4 +15,16 @@
     <Folder Include="Model\WeaponSystems\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="View\BulletsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="View\BulletsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>

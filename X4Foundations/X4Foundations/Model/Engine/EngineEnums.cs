@@ -28,7 +28,15 @@ namespace X4Foundations.Model.Engine
 		repairdrone,
 		spacesuit,
 		Static,
-		transporter
+		transporter,
+		[Description("Missle Dumbfire")]
+		MissileDumbfire,
+		[Description("Missle Guided")]
+		MissileGuided,
+		[Description("Missle Swarm")]
+		MissileSwarm,
+		[Description("Limpet Mine")]
+		LimpetMine,
 	}
 
 	public enum EngineGrade

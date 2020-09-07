@@ -28,6 +28,10 @@ namespace X4Foundations.Model.Bullet
 		shotgun,
 		cannon,
 		burst,
+		railgun,
+		spacesuitlaser,
+		spacesuitrepairlaser,
+		charge
 	}
 
 	public enum BulletWeaponType

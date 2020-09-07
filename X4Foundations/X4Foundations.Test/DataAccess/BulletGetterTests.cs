@@ -5,7 +5,6 @@ using System.Reflection;
 using System.Xml;
 using X4Foundations.DataAccess;
 using X4Foundations.Model.Bullet;
-using X4Foundations.Model.Bullet;
 using Xunit;
 using Properties = X4Foundations.Model.Bullet.Properties;
 
@@ -73,46 +72,26 @@ namespace X4Foundations.Test.DataAccess
 			}
 		}
 
-		//[Fact]
-		//public void RemoveMultitermBulletFileNameParameters_HasMultitermParameters_LimpetMine()
-		//{
-		//	const string bulletFileName = "bullet_limpet_mine_01_mk1_macro.xml";
-		//	List<string> bulletFileNameSubParts = bulletFileName.Split('_').ToList();
-		//	bulletFileNameSubParts.Remove("bullet");
-		//	bulletFileNameSubParts.Remove("macro.xml");
-		//	BulletGetter bulletGetter = new BulletGetter("some folder");
-		//	MethodInfo methodInfo = typeof(BulletGetter).GetMethod("RemoveMultitermBulletFileNameParameters", BindingFlags.NonPublic | BindingFlags.Instance);
-		//	object[] parameters = { bulletFileNameSubParts };
+		[Fact]
+		public void RemoveMultitermBulletFileNameParameters_HasMultitermParameters_SpacesuitLaser()
+		{
+			const string bulletFileName = "bullet_spacesuit_laser_02_mk1_macro.xml";
+			List<string> bulletFileNameSubParts = bulletFileName.Split('_').ToList();
+			bulletFileNameSubParts.Remove("bullet");
+			bulletFileNameSubParts.Remove("macro.xml");
+			BulletGetter bulletGetter = new BulletGetter("some folder");
+			MethodInfo methodInfo = typeof(BulletGetter).GetMethod("RemoveMultitermBulletFileNameParameters", BindingFlags.NonPublic | BindingFlags.Instance);
+			object[] parameters = { bulletFileNameSubParts };
 
-		//	// Method under test
-		//	List<string> bulletFileNameSubPartsAfterMethodCall = new List<string>();
-		//	bulletFileNameSubPartsAfterMethodCall = (List<string>)methodInfo.Invoke(bulletGetter, parameters);
+			// Method under test
+			List<string> bulletFileNameSubPartsAfterMethodCall = new List<string>();
+			bulletFileNameSubPartsAfterMethodCall = (List<string>)methodInfo.Invoke(bulletGetter, parameters);
 
-		//	Assert.Equal(bulletFileNameSubParts.Count, bulletFileNameSubPartsAfterMethodCall.Count + 1);
-		//	Assert.Equal("LimpetMine", bulletFileNameSubPartsAfterMethodCall[0]);
-		//	Assert.Equal("01", bulletFileNameSubPartsAfterMethodCall[1]);
-		//	Assert.Equal("mk1", bulletFileNameSubPartsAfterMethodCall[2]);
-		//}
-
-		//[Fact]
-		//public void RemoveMultitermBulletFileNameParameters_HasMultitermParameters_MissileDumbfire()
-		//{
-		//	const string bulletFileName = "bullet_missile_dumbfire_mk1_macro.xml";
-		//	List<string> bulletFileNameSubParts = bulletFileName.Split('_').ToList();
-		//	bulletFileNameSubParts.Remove("bullet");
-		//	bulletFileNameSubParts.Remove("macro.xml");
-		//	BulletGetter bulletGetter = new BulletGetter("some folder");
-		//	MethodInfo methodInfo = typeof(BulletGetter).GetMethod("RemoveMultitermBulletFileNameParameters", BindingFlags.NonPublic | BindingFlags.Instance);
-		//	object[] parameters = { bulletFileNameSubParts };
-
-		//	// Method under test
-		//	List<string> bulletFileNameSubPartsAfterMethodCall = new List<string>();
-		//	bulletFileNameSubPartsAfterMethodCall = (List<string>)methodInfo.Invoke(bulletGetter, parameters);
-
-		//	Assert.Equal(bulletFileNameSubParts.Count, bulletFileNameSubPartsAfterMethodCall.Count + 1);
-		//	Assert.Equal("MissileDumbfire", bulletFileNameSubPartsAfterMethodCall[0]);
-		//	Assert.Equal("mk1", bulletFileNameSubPartsAfterMethodCall[1]);
-		//}
+			Assert.Equal(bulletFileNameSubParts.Count, bulletFileNameSubPartsAfterMethodCall.Count + 1);
+			Assert.Equal("SpacesuitLaser", bulletFileNameSubPartsAfterMethodCall[0]);
+			Assert.Equal("02", bulletFileNameSubPartsAfterMethodCall[1]);
+			Assert.Equal("mk1", bulletFileNameSubPartsAfterMethodCall[2]);
+		}
 		#endregion RemoveMultitermBulletFileNameParameters
 
 		#region GenerateBulletName
@@ -312,18 +291,21 @@ namespace X4Foundations.Test.DataAccess
 			Properties bulletProperties = new Properties();
 			bulletProperties = (Properties)methodInfo.Invoke(bulletGetter, parameters);
 
-			bulletProperties.Bullet.Amount.Duration = 29;
-			bulletProperties.Boost.Thrust = 2;
-			bulletProperties.Boost.Attack = 10;
-			bulletProperties.Boost.Release = 1;
-			bulletProperties.Travel.Charge = 20;
-			bulletProperties.Travel.Thrust = 31;
-			bulletProperties.Travel.Attack = 75;
-			bulletProperties.Travel.Release = 22.5;
-			bulletProperties.Thrust.Forward = 4206;
-			bulletProperties.Thrust.Reverse = 4627;
-			bulletProperties.Hull.Max = 4033;
-			bulletProperties.Hull.Threshold = 0.3;
+			bulletProperties.Bullet.Speed = 983;
+			bulletProperties.Bullet.Lifetime = 6.6;
+			bulletProperties.Bullet.Amount = 1;
+			bulletProperties.Bullet.BarrelAmount = 1;
+			bulletProperties.Bullet.TimeDiff = 0;
+			bulletProperties.Bullet.Angle = 0;
+			bulletProperties.Bullet.MaxHits = 1;
+			bulletProperties.Bullet.Ricochet = 0;
+			bulletProperties.Bullet.Ricochet = 0;
+			bulletProperties.Bullet.Scale = 0;
+			bulletProperties.Bullet.Attach = 0;
+			bulletProperties.Heat.Value = 5756;
+			bulletProperties.Reload.Time = 4;
+			bulletProperties.Damage.Value = 1841;
+			bulletProperties.Damage.Repair = 0;
 		}
 		#endregion ParseBulletXml
 		#endregion Private Methods

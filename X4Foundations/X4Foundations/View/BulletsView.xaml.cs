@@ -15,15 +15,15 @@ using X4Foundations.ViewModel;
 namespace X4Foundations.View
 {
 	/// <summary>
-	/// Interaction logic for BulletsView.xaml
+	/// Interaction logic for EnginesView.xaml
 	/// </summary>
-	public partial class BulletsView : UserControl
+	public partial class EnginesView : UserControl
 	{
-		public BulletsView()
+		public EnginesView()
 		{
 			InitializeComponent();
-			BulletsViewModel bulletsViewModel = new BulletsViewModel();
-			DataContext = bulletsViewModel;
+			EnginesViewModel enginesViewModel = new EnginesViewModel();
+			DataContext = enginesViewModel;
 		}
 	}
 }

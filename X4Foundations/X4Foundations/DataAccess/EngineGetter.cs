@@ -55,7 +55,9 @@ namespace X4Foundations.DataAccess
 			engineXml.Load(engineFilePath);
 			engine.Properties = ParseEnginePropertiesXml(engineXml);
 
-			engine.Name = GenerateEngineName(engine);
+			engine.Faction ??= FactionType.GEN;
+
+			engine.Name = GenerateEngineName(engine).Trim();
 
 			return engine;
 		}
@@ -139,6 +141,7 @@ namespace X4Foundations.DataAccess
 			if (engineObject.Type == null && Enum.TryParse(engineSubstring, true, out EngineType engineType))
 			{
 				engineObject.Type = engineType;
+
 				return engineObject;
 			}
 

@@ -8,5 +8,7 @@ namespace X4Foundations.Model.Bullet
 	{
 		[XmlAttribute("rate")]
 		public double Rate { get; set; }
+		[XmlAttribute("time")]
+		public double Time { get; set; }
 	}
 }

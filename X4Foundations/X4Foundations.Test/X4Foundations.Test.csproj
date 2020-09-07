@@ -25,7 +25,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="DataAccess\TestData\bullet_gen_m_plasma_01_mk1_macro.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="DataAccess\TestData\engine_arg_m_allround_01_mk1_macro.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\ValidBulletXml.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="DataAccess\TestData\ValidEngineXml.xml">

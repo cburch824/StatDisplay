@@ -8,6 +8,14 @@
         mc:Ignorable="d"
         Title="X4: Foundations Stat Display" Height="450" Width="800">
     <Grid>
-        <view:EnginesView></view:EnginesView>
+        <TabControl>
+            <TabItem Header="Engines">
+                <view:EnginesView></view:EnginesView>
+            </TabItem>
+            <TabItem Header="Bullets">
+                <view:BulletsView></view:BulletsView>
+            </TabItem>
+        </TabControl>
+        
     </Grid>
 </Window>

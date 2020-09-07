@@ -49,7 +49,9 @@ namespace X4Foundations.DataAccess
 
 			BulletModel bullet = new BulletModel();
 			bullet.WeaponType = DetermineBulletWeaponType(bulletFileNameSubParts);
-			//bulletFileNameSubParts = RemoveMultitermBulletFileNameParameters(bulletFileNameSubParts);
+			if (bullet.WeaponType == BulletWeaponType.turret)
+				bulletFileNameSubParts.Remove("turret");
+			bulletFileNameSubParts = RemoveMultitermBulletFileNameParameters(bulletFileNameSubParts);
 			
 			bulletFileNameSubParts.ForEach(x => bullet = ParseBulletSubstring(bullet, x));
 
@@ -57,7 +59,9 @@ namespace X4Foundations.DataAccess
 			bulletXml.Load(bulletFilePath);
 			bullet.Properties = ParseBulletPropertiesXml(bulletXml);
 
-			bullet.Name = GenerateBulletName(bullet);
+			bullet.Faction ??= FactionType.GEN;
+
+			bullet.Name = GenerateBulletName(bullet).Trim();
 
 			return bullet;
 		}
@@ -76,30 +80,16 @@ namespace X4Foundations.DataAccess
 		/// <returns>bulletFileNameSubParts with only single term parameters</returns>
 		private List<string> RemoveMultitermBulletFileNameParameters(List<string> bulletFileNameSubParts)
 		{
-			if (bulletFileNameSubParts.Contains("limpet") && bulletFileNameSubParts.Contains("mine"))
+			if (bulletFileNameSubParts.Contains("spacesuit") && bulletFileNameSubParts.Contains("laser"))
 			{
-				bulletFileNameSubParts = bulletFileNameSubParts.Select(x => x == "limpet" ? "LimpetMine" : x).ToList();
-				if (!bulletFileNameSubParts.Remove("mine")) { throw new Exception("Failed to remove subpart \"mine\" even though limpet was found in the list"); }
+				bulletFileNameSubParts = bulletFileNameSubParts.Select(x => x == "spacesuit" ? "spacesuitlaser" : x).ToList();
+				if (!bulletFileNameSubParts.Remove("laser")) { throw new Exception("Failed to remove subpart \"laser\" even though spacesuit was found in the list"); }
 			}
-			if (bulletFileNameSubParts.Contains("special") && bulletFileNameSubParts.Contains("mine"))
+
+			if (bulletFileNameSubParts.Contains("spacesuit") && bulletFileNameSubParts.Contains("repairlaser"))
 			{
-				bulletFileNameSubParts = bulletFileNameSubParts.Select(x => x == "special" ? "SpecialMine" : x).ToList();
-				if (!bulletFileNameSubParts.Remove("mine")) { throw new Exception("Failed to remove subpart \"mine\" even though limpet was found in the list"); }
-			}
-			else if (bulletFileNameSubParts.Contains("dumbfire") && bulletFileNameSubParts.Contains("missile"))
-			{
-				bulletFileNameSubParts = bulletFileNameSubParts.Select(x => x == "missile" ? "MissileDumbfire" : x).ToList();
-				if (!bulletFileNameSubParts.Remove("dumbfire")) { throw new Exception("Failed to remove subpart \"dumbfire\" even though dumbfire was found in the list"); }
-			}
-			else if (bulletFileNameSubParts.Contains("swarm") && bulletFileNameSubParts.Contains("missile"))
-			{
-				bulletFileNameSubParts = bulletFileNameSubParts.Select(x => x == "missile" ? "MissileSwarm" : x).ToList();
-				if (!bulletFileNameSubParts.Remove("swarm")) { throw new Exception("Failed to remove subpart \"swarm\" even though swarm was found in the list"); }
-			}
-			else if (bulletFileNameSubParts.Contains("guided") && bulletFileNameSubParts.Contains("missile"))
-			{
-				bulletFileNameSubParts = bulletFileNameSubParts.Select(x => x == "missile" ? "MissileGuided" : x).ToList();
-				if (!bulletFileNameSubParts.Remove("guided")) { throw new Exception("Failed to remove subpart \"guided\" even though guided was found in the list"); }
+				bulletFileNameSubParts = bulletFileNameSubParts.Select(x => x == "spacesuit" ? "spacesuitrepairlaser" : x).ToList();
+				if (!bulletFileNameSubParts.Remove("repairlaser")) { throw new Exception("Failed to remove subpart \"laser\" even though spacesuit was found in the list"); }
 			}
 
 			return bulletFileNameSubParts;

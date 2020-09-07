@@ -32,16 +32,8 @@ namespace X4Foundations
 		KHA,
 		[Description("Kha'ak")]
 		KHK,
-		[Description("Limpet Mine")]
-		LimpetMine,
 		[Description("Ministry of Finance")]
 		MIN,
-		[Description("Missle Dumbfire")]
-		MissileDumbfire,
-		[Description("Missle Guided")]
-		MissileGuided,
-		[Description("Missle Swarm")]
-		MissileSwarm,
 		[Description("Godrealm of the Paranid")]
 		PAR,
 		[Description("Player")]

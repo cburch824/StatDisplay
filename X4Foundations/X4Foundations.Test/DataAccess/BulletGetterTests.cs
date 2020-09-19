@@ -88,7 +88,7 @@ namespace X4Foundations.Test.DataAccess
 			bulletFileNameSubPartsAfterMethodCall = (List<string>)methodInfo.Invoke(bulletGetter, parameters);
 
 			Assert.Equal(bulletFileNameSubParts.Count, bulletFileNameSubPartsAfterMethodCall.Count + 1);
-			Assert.Equal("SpacesuitLaser", bulletFileNameSubPartsAfterMethodCall[0]);
+			Assert.Equal("spacesuitlaser", bulletFileNameSubPartsAfterMethodCall[0]);
 			Assert.Equal("02", bulletFileNameSubPartsAfterMethodCall[1]);
 			Assert.Equal("mk1", bulletFileNameSubPartsAfterMethodCall[2]);
 		}
@@ -291,21 +291,21 @@ namespace X4Foundations.Test.DataAccess
 			Properties bulletProperties = new Properties();
 			bulletProperties = (Properties)methodInfo.Invoke(bulletGetter, parameters);
 
-			bulletProperties.Bullet.Speed = 983;
-			bulletProperties.Bullet.Lifetime = 6.6;
-			bulletProperties.Bullet.Amount = 1;
-			bulletProperties.Bullet.BarrelAmount = 1;
-			bulletProperties.Bullet.TimeDiff = 0;
-			bulletProperties.Bullet.Angle = 0;
-			bulletProperties.Bullet.MaxHits = 1;
-			bulletProperties.Bullet.Ricochet = 0;
-			bulletProperties.Bullet.Ricochet = 0;
-			bulletProperties.Bullet.Scale = 0;
-			bulletProperties.Bullet.Attach = 0;
-			bulletProperties.Heat.Value = 5756;
-			bulletProperties.Reload.Time = 4;
-			bulletProperties.Damage.Value = 1841;
-			bulletProperties.Damage.Repair = 0;
+			Assert.Equal(983, bulletProperties.Bullet.Speed);
+			Assert.Equal(6.6, bulletProperties.Bullet.Lifetime);
+			Assert.Equal(1, bulletProperties.Bullet.Amount);
+			Assert.Equal(1, bulletProperties.Bullet.BarrelAmount);
+			Assert.Equal(0, bulletProperties.Bullet.TimeDiff);
+			Assert.Equal(0, bulletProperties.Bullet.Angle);
+			Assert.Equal(1, bulletProperties.Bullet.MaxHits);
+			Assert.Equal(0, bulletProperties.Bullet.Ricochet);
+			Assert.Equal(0, bulletProperties.Bullet.Ricochet);
+			Assert.Equal(0, bulletProperties.Bullet.Scale);
+			Assert.Equal(0, bulletProperties.Bullet.Attach);
+			Assert.Equal(5756, bulletProperties.Heat.Value);
+			Assert.Equal(4, bulletProperties.Reload.Time);
+			Assert.Equal(1841, bulletProperties.Damage.Value);
+			Assert.Equal(0, bulletProperties.Damage.Repair);
 		}
 		#endregion ParseBulletXml
 		#endregion Private Methods

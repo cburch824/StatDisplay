@@ -310,18 +310,18 @@ namespace X4Foundations.Test.DataAccess
 			Properties engineProperties = new Properties();
 			engineProperties = (Properties) methodInfo.Invoke(engineGetter, parameters);
 
-			engineProperties.Boost.Duration = 29;
-			engineProperties.Boost.Thrust = 2;
-			engineProperties.Boost.Attack = 10;
-			engineProperties.Boost.Release = 1;
-			engineProperties.Travel.Charge = 20;
-			engineProperties.Travel.Thrust = 31;
-			engineProperties.Travel.Attack = 75;
-			engineProperties.Travel.Release = 22.5;
-			engineProperties.Thrust.Forward = 4206;
-			engineProperties.Thrust.Reverse = 4627;
-			engineProperties.Hull.Max = 4033;
-			engineProperties.Hull.Threshold = 0.3;
+			Assert.Equal(29, engineProperties.Boost.Duration);
+			Assert.Equal(2, engineProperties.Boost.Thrust);
+			Assert.Equal(10, engineProperties.Boost.Attack);
+			Assert.Equal(1, engineProperties.Boost.Release);
+			Assert.Equal(20, engineProperties.Travel.Charge);
+			Assert.Equal(31, engineProperties.Travel.Thrust);
+			Assert.Equal(75, engineProperties.Travel.Attack);
+			Assert.Equal(22.5, engineProperties.Travel.Release);
+			Assert.Equal(4206, engineProperties.Thrust.Forward);
+			Assert.Equal(4627, engineProperties.Thrust.Reverse);
+			Assert.Equal(4033, engineProperties.Hull.Max);
+			Assert.Equal(0.3, engineProperties.Hull.Threshold);
 		}
 		#endregion ParseEngineXml
 		#endregion Private Methods

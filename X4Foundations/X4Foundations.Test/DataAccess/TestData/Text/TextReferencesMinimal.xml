@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<language id="44">
+
+  <page id="20101" title="Ships" descr="Names and descriptions of ships" voice="yes">
+    <t id="10000">(Argon Ships)</t>
+    <t id="10101">Discoverer</t>
+    <t id="10102">(Discoverer Vanguard){20101,10101} {20111,1101}</t>
+    <t id="10103">(Discoverer Sentinel){20101,10101} {20111,1201}</t>
+    <t id="10111">Long serving as the scout and exploration ship for the Argon fleet, the Discoverer saw little re-design or overhaul until the Jump Gate shutdown. The current model, an overall improvement on the model used before the shutdown, was designed in the Antigone Republic and made available to the Argon Federation as part of an ongoing technology exchange between the two allied factions.</t>
+    <t id="10112">{20101,10111}</t>
+    <t id="10113">{20101,10111}</t>
+    <t id="10201">Buster</t>
+    <t id="10202">(Buster Vanguard){20101,10201} {20111,1101}</t>
+    <t id="10203">(Buster Sentinel){20101,10201} {20111,1201}</t>
+    <t id="10211">{20006,102}(No information available)</t>
+    <t id="10212">{20101,10211}</t>
+    <t id="10213">{20101,10211}</t>
+    <t id="10301">Nova</t>
+    <t id="10302">(Nova Vanguard){20101,10301} {20111,1101}</t>
+    <t id="10303">(Nova Sentinel){20101,10301} {20111,1201}</t>
+    <t id="10311">Though the prototype for the new-model Nova-class dogfighter was in development as far back as the Terran Conflict, it never reached mass-production before the Jump Gate shutdown. As such, its first major role was as an escort to Argon Federation exploratory groups that were sent out into newly discovered or rediscovered areas of space as the Jump Gates began to realign.\n\nIn terms of its class, the new-look Nova is a major step up in ship design, with rotatable engines that make it formidable in keeping up with and tracking targets of a similar size.</t>
+    <t id="10312">{20101,10311}</t>
+    <t id="10313">{20101,10311}</t>
+    <t id="10401">Eclipse</t>
+    <t id="10402">(Eclipse Vanguard){20101,10401} {20111,1101}</t>
+    <t id="10403">(Eclipse Sentinel){20101,10401} {20111,1201}</t>
+    <t id="10411">Redesigned using the same combat-ready cockpit used by the new-look Nova, the Eclipse replaces the rotatable engines with a support structure that allows it to carry more weapons - effectively sacrificing the manoeuvrability of the dog-fighter for enough fire-power to be devastating against both small- and medium-sized ships.\n\nThis sacrifice does make the ship vulnerable to more specialised dog-fighters and interceptors, but nonetheless both the Federal and Republic navy has found the new Eclipse to be a worthy addition to their fleets, with Argon ship designers once again leading the race to design ships effective for both personal and military use.</t>
+    <t id="10412">{20101,10411}</t>
+    <t id="10413">{20101,10411}</t>
+  </page>
+</language>

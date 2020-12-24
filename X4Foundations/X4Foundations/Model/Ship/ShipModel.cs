@@ -3,6 +3,6 @@
 	public class ShipModel
 	{
 		private string _name;
-		private
+		//private
 	}
 }

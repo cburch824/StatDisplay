@@ -15,6 +15,12 @@
             <TabItem Header="Bullets">
                 <view:BulletsView></view:BulletsView>
             </TabItem>
+            <TabItem Header="Weapons">
+                <view:WeaponsView></view:WeaponsView>
+            </TabItem>
+            <TabItem Header="Turrets">
+                <view:TurretsView></view:TurretsView>
+            </TabItem>
         </TabControl>
         
     </Grid>

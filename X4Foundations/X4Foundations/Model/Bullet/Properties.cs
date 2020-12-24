@@ -7,12 +7,12 @@ namespace X4Foundations.Model.Bullet
 	public class Properties
 	{
 		[XmlElement("bullet")]
-		public Bullet Bullet { get; set; }
+		public Bullet Bullet { get; set; } = new Bullet();
 		[XmlElement("damage")]
-		public Damage Damage { get; set; }
+		public Damage Damage { get; set; } = new Damage();
 		[XmlElement("heat")]
-		public Heat Heat { get; set; }
+		public Heat Heat { get; set; } = new Heat();
 		[XmlElement("reload")]
-		public Reload Reload { get; set; }
+		public Reload Reload { get; set; } = new Reload();
 	}
 }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace X4Foundations.DataAccess
+namespace X4Foundations.Model.Ship
 {
-	class WeaponGetter
+	interface IConnection
 	{
 	}
 }

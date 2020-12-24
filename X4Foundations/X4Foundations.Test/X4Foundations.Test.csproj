@@ -25,16 +25,43 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\capital\macros\capitalEmpty2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\capital\macros\capitalEmpty1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\dumbfire\macros\dumbfireEmpty1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\standard\macros\standardEmpty1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\xref_parts\xRefPartsEmpty1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="DataAccess\TestData\bullet_gen_m_plasma_01_mk1_macro.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="DataAccess\TestData\engine_arg_m_allround_01_mk1_macro.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="DataAccess\TestData\Text\TextReferencesFull.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\Text\TextReferencesMinimal.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="DataAccess\TestData\ValidBulletXml.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="DataAccess\TestData\ValidEngineXml.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\ValidTurretXml.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\ValidWeaponXml.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

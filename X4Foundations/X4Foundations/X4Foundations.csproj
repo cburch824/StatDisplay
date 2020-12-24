@@ -12,16 +12,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\WeaponSystems\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Compile Update="View\TurretsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WeaponsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\BulletsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <Page Update="View\TurretsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WeaponsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\BulletsView.xaml">
       <SubType>Designer</SubType>
     </Page>

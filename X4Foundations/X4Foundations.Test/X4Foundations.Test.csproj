@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="DataAccess\TestData\BaseShipFolder\" />
     <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
@@ -25,6 +26,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_l\macros\ship_arg_l_destroyer_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_m\macros\ship_arg_m_trans_container_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_s\macros\ship_arg_s_fighter_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_xl\macros\ship_arg_xl_builder_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_xs\macros\ship_arg_xs_cv_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\xref_parts\THRUSTER_SHIP_S_01_DATA.ANI">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="DataAccess\TestData\BaseWeaponSystemFolder\capital\macros\capitalEmpty2.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

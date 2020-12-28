@@ -1,6 +1,5 @@
 ﻿
 using System.Collections.Generic;
-using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 using X4Foundations.Model.Text;
@@ -67,7 +66,7 @@ namespace X4Foundations.DataAccess.Text
 			return true;
 		}
 
-		private string TrimShimName(string rawShipName)
+		private string TrimShipName(string rawShipName)
 		{
 			//todo - write this method to trim off the parens, id references
 			return rawShipName;

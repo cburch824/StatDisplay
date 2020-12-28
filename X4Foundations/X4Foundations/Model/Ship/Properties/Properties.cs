@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 namespace X4Foundations.Model.Ship.Properties
 {
 	[Serializable, XmlRoot("properties")]
-	class Properties
+	public class Properties
 	{
 		[XmlElement("hull")]
 		public Hull Hull { get; set; } = new Hull();
@@ -16,6 +16,8 @@ namespace X4Foundations.Model.Ship.Properties
 		public RotationAcceleration RotationAcceleration { get; set; } = new RotationAcceleration();
 		[XmlElement("rotationspeed")]
 		public RotationSpeed RotationSpeed { get; set; } = new RotationSpeed();
+		[XmlElement("ship")]
+		public Ship Ship { get; set; } = new Ship();
 		[XmlElement("thruster")]
 		public Thruster Thruster { get; set; } = new Thruster();
 	}

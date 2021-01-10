@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace X4Foundations.View
+namespace X4Foundations.FrontEnd.Wpf.View
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml

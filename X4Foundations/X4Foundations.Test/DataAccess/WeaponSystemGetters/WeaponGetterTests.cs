@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Xml;
-using X4Foundations.DataAccess.WeaponSystemGetters;
-using X4Foundations.Model.WeaponSystem;
+using X4Foundations.DataAccess;
+using X4Foundations.DataAccess.DataAccess.WeaponSystemGetters;
+using X4Foundations.DataAccess.Model.WeaponSystem;
 using Xunit;
 
-namespace X4Foundations.Test.DataAccess.WeaponSystemGetters
+namespace X4Foundations.Test.DataAccess.DataAccess.WeaponSystemGetters
 {
 	public class WeaponGetterTests
 	{

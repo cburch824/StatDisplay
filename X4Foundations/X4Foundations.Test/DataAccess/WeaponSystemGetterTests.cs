@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
-using X4Foundations.DataAccess;
+using X4Foundations.DataAccess.DataAccess;
 using Xunit;
 
-namespace X4Foundations.Test.DataAccess
+namespace X4Foundations.Test.DataAccess.DataAccess
 {
 	public class WeaponSystemGetterTests
 	{

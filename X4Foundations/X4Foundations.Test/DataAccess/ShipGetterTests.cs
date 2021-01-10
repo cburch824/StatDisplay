@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 using System.Xml;
-using X4Foundations.DataAccess;
-using X4Foundations.Model.Ship.Properties;
+using X4Foundations.DataAccess.DataAccess;
+using X4Foundations.DataAccess.Model.Ship.Properties;
 using Xunit;
 
-namespace X4Foundations.Test.DataAccess
+namespace X4Foundations.Test.DataAccess.DataAccess
 {
 	public class ShipGetterTests
 	{

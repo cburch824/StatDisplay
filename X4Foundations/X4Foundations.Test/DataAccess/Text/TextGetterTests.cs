@@ -1,12 +1,10 @@
-﻿
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using X4Foundations.DataAccess.Text;
-using X4Foundations.Model.Text;
+using X4Foundations.DataAccess.DataAccess.Text;
+using X4Foundations.DataAccess.Model.Text;
 using Xunit;
 
-namespace X4Foundations.Test.DataAccess.Text
+namespace X4Foundations.Test.DataAccess.DataAccess.Text
 {
 	public class TextGetterTests
 	{

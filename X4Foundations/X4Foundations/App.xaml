@@ -1,4 +1,4 @@
-﻿<Application x:Class="X4Foundations.App"
+﻿<Application x:Class="X4Foundations.FrontEnd.Wpf.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:X4Foundations"

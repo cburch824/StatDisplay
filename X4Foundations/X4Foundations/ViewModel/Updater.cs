@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace X4Foundations.ViewModel
+namespace X4Foundations.FrontEnd.Wpf.ViewModel
 {
 	public class Updater : ICommand
 	{

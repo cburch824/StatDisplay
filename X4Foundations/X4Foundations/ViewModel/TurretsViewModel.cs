@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Input;
-using X4Foundations.DataAccess;
-using X4Foundations.Model.WeaponSystem;
+using X4Foundations.DataAccess.DataAccess;
+using X4Foundations.DataAccess.Model.WeaponSystem;
 
-namespace X4Foundations.ViewModel
+namespace X4Foundations.FrontEnd.Wpf.ViewModel
 {
 	public class TurretsViewModel
 	{

@@ -1,0 +1,8 @@
+C:\Users\Hairy\Source\Repos\StatDisplay\X4Foundations\X4Foundations.DataAccess\bin\Debug\netcoreapp3.1\X4Foundations.DataAccess.deps.json
+C:\Users\Hairy\Source\Repos\StatDisplay\X4Foundations\X4Foundations.DataAccess\bin\Debug\netcoreapp3.1\X4Foundations.DataAccess.dll
+C:\Users\Hairy\Source\Repos\StatDisplay\X4Foundations\X4Foundations.DataAccess\bin\Debug\netcoreapp3.1\X4Foundations.DataAccess.pdb
+C:\Users\Hairy\Source\Repos\StatDisplay\X4Foundations\X4Foundations.DataAccess\obj\Debug\netcoreapp3.1\X4Foundations.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Hairy\Source\Repos\StatDisplay\X4Foundations\X4Foundations.DataAccess\obj\Debug\netcoreapp3.1\X4Foundations.DataAccess.AssemblyInfo.cs
+C:\Users\Hairy\Source\Repos\StatDisplay\X4Foundations\X4Foundations.DataAccess\obj\Debug\netcoreapp3.1\X4Foundations.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Hairy\Source\Repos\StatDisplay\X4Foundations\X4Foundations.DataAccess\obj\Debug\netcoreapp3.1\X4Foundations.DataAccess.dll
+C:\Users\Hairy\Source\Repos\StatDisplay\X4Foundations\X4Foundations.DataAccess\obj\Debug\netcoreapp3.1\X4Foundations.DataAccess.pdb

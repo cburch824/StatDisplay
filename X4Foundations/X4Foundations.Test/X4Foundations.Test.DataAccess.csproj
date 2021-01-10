@@ -1,0 +1,99 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\**" />
+    <Compile Remove="ViewModel\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <EmbeddedResource Remove="ViewModel\**" />
+    <None Remove="Model\**" />
+    <None Remove="ViewModel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Enums.NET" Version="3.0.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Microsoft.TestPlatform" Version="16.7.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataAccess\TestData\BaseShipFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\X4Foundations.DataAccess\X4Foundations.DataAccess.csproj" />
+    <ProjectReference Include="..\X4Foundations\X4Foundations.FrontEnd.Wpf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_l\macros\ship_arg_l_destroyer_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_m\macros\ship_arg_m_trans_container_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_s\macros\ship_arg_s_fighter_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_xl\macros\ship_arg_xl_builder_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\size_xs\macros\ship_arg_xs_cv_01_a_macro.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseShipFolder\xref_parts\THRUSTER_SHIP_S_01_DATA.ANI">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\capital\macros\capitalEmpty2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\capital\macros\capitalEmpty1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\dumbfire\macros\dumbfireEmpty1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\standard\macros\standardEmpty1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\BaseWeaponSystemFolder\xref_parts\xRefPartsEmpty1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\bullet_gen_m_plasma_01_mk1_macro.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\engine_arg_m_allround_01_mk1_macro.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\ValidShipXml.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\Text\TextReferencesFull.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\Text\TextReferencesMinimal.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\ValidBulletXml.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\ValidEngineXml.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\ValidTurretXml.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DataAccess\TestData\ValidWeaponXml.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

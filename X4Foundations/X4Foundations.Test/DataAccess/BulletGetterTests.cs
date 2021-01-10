@@ -4,11 +4,12 @@ using System.Linq;
 using System.Reflection;
 using System.Xml;
 using X4Foundations.DataAccess;
-using X4Foundations.Model.Bullet;
+using X4Foundations.DataAccess.DataAccess;
+using X4Foundations.DataAccess.Model.Bullet;
 using Xunit;
-using Properties = X4Foundations.Model.Bullet.Properties;
+using Properties = X4Foundations.DataAccess.Model.Bullet.Properties;
 
-namespace X4Foundations.Test.DataAccess
+namespace X4Foundations.Test.DataAccess.DataAccess
 {
 	public class BulletGetterTests
 	{

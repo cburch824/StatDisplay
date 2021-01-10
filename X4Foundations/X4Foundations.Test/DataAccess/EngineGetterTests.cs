@@ -4,10 +4,11 @@ using System.Linq;
 using System.Reflection;
 using System.Xml;
 using X4Foundations.DataAccess;
-using X4Foundations.Model.Engine;
+using X4Foundations.DataAccess.DataAccess;
+using X4Foundations.DataAccess.Model.Engine;
 using Xunit;
 
-namespace X4Foundations.Test.DataAccess
+namespace X4Foundations.Test.DataAccess.DataAccess
 {
 	public class EngineGetterTests
 	{

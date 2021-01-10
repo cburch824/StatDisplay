@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using X4Foundations.Model.Ship;
@@ -50,8 +50,8 @@ namespace X4Foundations.DataAccess
 		{
 			string shipFileName = Path.GetFileName(shipFilePath);
 			List<string> shipFileNameSubParts = shipFileName.Split('_').ToList();
-			shipFileNameSubParts.Remove("ship");
-			shipFileNameSubParts.Remove("macro.xml");
+			List<string> ignoreSubPartsList = new List<string>{"ship", "macro.xml", "container"};
+			shipFileNameSubParts.RemoveAll(x => ignoreSubPartsList.Contains(x));
 
 			ShipModel ship = new ShipModel();
 			shipFileNameSubParts.ForEach(x => ship = ParseShipSubstring(ship, x));
@@ -62,7 +62,7 @@ namespace X4Foundations.DataAccess
 
 			ship.Faction ??= FactionType.GEN;
 
-			//ship.Name = GenerateShipName(ship).Trim();
+			ship.Name = GenerateShipName(ship).Trim();
 
 			return ship;
 		}
@@ -105,7 +105,45 @@ namespace X4Foundations.DataAccess
 				return shipObject;
 			}
 
+			if (shipObject.Type == ShipType.miner && shipSubstring == "liquid" || shipSubstring == "solid")
+			{
+				shipObject.Type = (ShipType?)Enum.Parse(typeof(ShipType), $"miner{shipSubstring}");
+				return shipObject;
+			}
+
+			if (shipObject.Type == ShipType.fightingdrone && shipSubstring == "explosive")
+			{
+				shipObject.Type = (ShipType?)Enum.Parse(typeof(ShipType), $"fightingdrone{shipSubstring}");
+				return shipObject;
+			}
+
+			if (shipObject.Type == ShipType.miningdrone && shipSubstring == "liquid" || shipSubstring == "solid")
+			{
+				shipObject.Type = (ShipType?)Enum.Parse(typeof(ShipType), $"miningdrone{shipSubstring}");
+				return shipObject;
+			}
+
+			if (shipObject.Type == ShipType.cargodrone)
+			{
+				shipObject.Type = (ShipType?)Enum.Parse(typeof(ShipType), $"cargodrone{shipSubstring}");
+				return shipObject;
+			}
+
 			throw new Exception($"Failed to parse ship substring \"{shipSubstring}\"");
+		}
+
+		/// <summary>
+		/// Returns a name for an bullet given its properties. Format will follow "XL ARG Combat Bullet Mk2"
+		/// </summary>
+		/// <param name="bullet">populated bullet object used to derive the name</param>
+		/// <returns>readable name for the bullet object</returns>
+		private string GenerateShipName(ShipModel ship)
+		{
+			string shipName = $"{ship.Size.ToString().ToUpper()} {ship.Faction} {CultureInfo.CurrentCulture.TextInfo.ToTitleCase(ship.Type.ToString())}";
+
+			if (ship.Version > 1) { shipName += $" {ship.Version.Value:00}"; }
+
+			return shipName;
 		}
 
 		///// <summary>

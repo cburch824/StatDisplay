@@ -19,6 +19,8 @@ namespace X4Foundations.Model.Ship
 	public enum ShipType
 	{
 		miner,
+		minerliquid,
+		minersolid,
 		scout,
 		fighter,
 		heavyfighter,
@@ -28,11 +30,29 @@ namespace X4Foundations.Model.Ship
 		frigate,
 		destroyer,
 		fightingdrone,
+		fightingdroneexplosive,
 		lasertower,
 		miningdrone,
+		miningdroneliquid,
+		miningdronesolid,
 		resupplier,
 		builder,
 		carrier,
+		cv,
+		pv,
+		spacesuit,
+		police,
+		boardingpod,
+		buildingdrone,
+		cargodrone,
+		cargodroneempty,
+		cargodroneliquid,
+		cargodroneequipment,
+		cargodronepickup,
+		cargoodronesolid,
+		distressbeacon,
+		escapepod,
+		repairdrone,
 	}
 
 	public enum ConnectionType

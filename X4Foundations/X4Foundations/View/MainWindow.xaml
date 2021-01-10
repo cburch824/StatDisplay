@@ -21,6 +21,9 @@
             <TabItem Header="Turrets">
                 <view:TurretsView></view:TurretsView>
             </TabItem>
+            <TabItem Header="Ships">
+                <view:ShipsView></view:ShipsView>
+            </TabItem>
         </TabControl>
         
     </Grid>

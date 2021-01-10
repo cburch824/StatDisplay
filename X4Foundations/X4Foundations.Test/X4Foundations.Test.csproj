@@ -65,6 +65,9 @@
     <None Update="DataAccess\TestData\engine_arg_m_allround_01_mk1_macro.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="DataAccess\TestData\ValidShipXml.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="DataAccess\TestData\Text\TextReferencesFull.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

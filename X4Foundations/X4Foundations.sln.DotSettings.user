@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3ef45276_002Db246_002D43af_002Da07b_002D49decdcee8a1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetShipMacroFolders_ReturnedSuccessfully" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::576B60DD-D1AD-43A8-BEA0-D7F0AAA3C26D::.NETCoreApp,Version=v3.1::X4Foundations.Test.DataAccess.ShipGetterTests.GetShipMacroFolders_ReturnedSuccessfully&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

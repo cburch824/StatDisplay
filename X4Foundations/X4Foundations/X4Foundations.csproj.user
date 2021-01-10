@@ -10,8 +10,14 @@
     <Compile Update="View\EnginesView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\ShipsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="View\ShipsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\TurretsView.xaml">
       <SubType>Designer</SubType>
     </Page>
